@@ -15,6 +15,9 @@
     top: 0;
     right: 40px;
 }
+h2 {
+    text-align: center;
+}
 
 .shopping-bag {
     display: flex;
@@ -27,10 +30,10 @@
     display: flex;
     /* flex-wrap: wrap; */
     font-size: small;
-    width: calc(var(--spacing-shopping) - 70px);
+    width: calc(var(--spacing-shopping) - 90px);
     height: 200px;
     padding: 25px;
-    margin: var(--spacing-medium) 20px;
+    margin: var(--spacing-medium) auto;
     background-color: var(--color-white);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);

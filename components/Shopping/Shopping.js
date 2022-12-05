@@ -36,9 +36,12 @@ class Shopping {
                         <div class = "shopping">
                             <div class = "shopping-contayner">
                                 <div class="shopping-counter">
+                                <h2>Order books</h2>
                                     <span class="shopping-counter__books">Books ${index} </span>
+                                    <br>
                                     <span class="shopping-counter__total">Total ${TOTAL} USD </span>
-                                    <button class="shopping-counter__btn">Confirm order</button>
+                                    <a href="form/index.html"><button class="shopping-counter__btn">Confirm order</button>
+                                    </a>
                                 </div>
                                 <ul class = "shopping-bag js-bag">${htmlBooks}</ul>
                             </div>
