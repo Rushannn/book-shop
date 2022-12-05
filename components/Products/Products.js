@@ -61,6 +61,7 @@ class Products {
                 </div>
             </div>
         </div>
+        <h1>Book shop</h1>
         <ul class="products-container">
             ${htmlCatalog}
         </ul>`;
