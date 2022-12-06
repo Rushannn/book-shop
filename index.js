@@ -1,9 +1,8 @@
+localStorage.clear();
+
 function render() {
-
-
     productsPage.render();
     shoppingPage.render();
-
 }
 
 let CATALOG = [];

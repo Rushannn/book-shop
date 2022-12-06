@@ -51,11 +51,15 @@ body {
 }
 
 .form__input {
-    height: 50px;
-    padding: 0 20px;
+    height: 35px;
+    padding: 0 10px;
     border-radius: 5px;
     width: 100%;
     font-size: 18px;
+}
+
+.form__input._error {
+    box-shadow: 0 0 25px red;
 }
 
 .payment {
@@ -106,7 +110,7 @@ body {
 }
 
 
-.form__checkbox {}
+
 
 .checkbox__input {
     display: none;
@@ -117,10 +121,12 @@ body {
 }
 
 .checkbox__label {
+    width: 100%;
     font-size: 16px;
     line-height: 140%;
     display: inline-flex;
     align-items: center;
+    margin-bottom: 10px;
     position: relative;
     cursor: pointer;
 }
@@ -169,6 +175,7 @@ body {
     position: relative;
     top: 0;
 }
+
 .form__button:hover {
     background-color: #586f4c;
 }
@@ -176,4 +183,14 @@ body {
 .form__button:active {
     top: 3px;
     box-shadow: 0 2px 0 #242c20;
+}
+
+.form__button:disabled {
+    color: rgb(155, 157, 160);
+    cursor: auto;
+    background-color: lightslategrey;
+}
+
+.form__button:disabled.form__button:active {
+    top: 0;
 }
