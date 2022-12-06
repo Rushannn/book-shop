@@ -80,6 +80,6 @@ function checkValidation() {
         formBtn.disabled = true
     }
 };
-checkValidation()
+checkValidation();
 
 

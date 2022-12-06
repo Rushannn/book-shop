@@ -58,7 +58,7 @@ body {
     font-size: 18px;
 }
 
-._error {
+.form__input._error {
     box-shadow: 0 0 25px red;
 }
 
@@ -175,6 +175,7 @@ body {
     position: relative;
     top: 0;
 }
+
 .form__button:hover {
     background-color: #586f4c;
 }
@@ -189,6 +190,7 @@ body {
     cursor: auto;
     background-color: lightslategrey;
 }
+
 .form__button:disabled.form__button:active {
     top: 0;
 }
