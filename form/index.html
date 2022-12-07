@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Delivery form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form__body">
+                <div class="form__title">Delivery form</div>
+                <div class="form__item">
+                    <label for="formName" class="form__label">Name*</label>
+                    <input id="formName" type="text" name="name" required minlength="4"  pattern="^[A-Za-z]{4,40}$" title="not less than 4 symbols, strings only, without spaces" class="form__input _req _name">
+                </div>
+                <div class="form__item pro">
+                    <label for="formSurname" class="form__label">Surname*</label>
+                    <input id="formSurname" type="text" name="surname" class="form__input _req surname" required minlength="5" pattern="^[A-Za-z]{4,40}$" title="not less than 5 symbols, strings only, without spaces">
+                </div>
+                <div class="form__item">
+                    <label for="formDeliveryDate" class="form__label">Delivery date*</label>
+                    <input id="formDeliveryDate" type="date"  name="email" class="form__input _req date">
+                </div>
+                <div class="form__item">
+                    <label for="formStreet" class="form__label">Street*</label>
+                    <input id="formStreet" type="text" name="street" class="form__input _req" required minlength="5" pattern="^[\dA-Za-z\s]{5,}$" title="the length not less than 5 symbols, the numbers are allowed">
+                </div>
+                <div class="form__item">
+                    <label for="formHouseNumber" class="form__label">House number*</label>
+                    <input id="formHouseNumber" type="text" name="houseNumber" class="form__input _req" required minlength="1" pattern="^\d{1,}$" title="numbers only, positive numbers only">
+                </div>
+                <div class="form__item">
+                    <label for="formFlatNumber" class="form__label">Flat number*</label>
+                    <input id="formFlatNumber" type="text" name="flatNumber" class="form__input _req" required minlength="1" pattern="^\d+(-[\d]+)?" title="numbers only, positive numbers only, the dash symbol is allowed">
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Payment type</div>
+                    <div class="payment">
+                        <div class="payment__item">
+                            <input id="formPayCash" checked type="radio" value="cash" name="payment"
+                                class="payment__input">
+                            <label for="formPayCash" class="payment__label"><span>Cash</span></label>
+                        </div>
+                        <div class="payment__item">
+                            <input id="formPayCard" type="radio" value="card" name="payment" class="payment__input">
+                            <label for="formPayCard" class="payment__label"><span>Card</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="form__title">Choose 2 gifts</div>
+                    <div class="form__checkbox">
+                        <input id="checkboxPack" type="checkbox" name="checkboxGifts" class="checkbox__input">
+                        <label for="checkboxPack" class="checkbox__label">Pack</label>
+                    </div>
+                    <div class="form__checkbox">
+                        <input id="checkboxPostcard" type="checkbox" name="checkboxGifts" class="checkbox__input">
+                        <label for="checkboxPostcard" class="checkbox__label">add postcard</label>
+                    </div>
+                    <div class="form__checkbox">
+                        <input id="checkboxDiscount" type="checkbox" name="checkboxGifts" class="checkbox__input">
+                        <label for="checkboxDiscount" class="checkbox__label"><span>2% discount to the next
+                                time</span></label>
+                    </div>
+                    <div class="form__checkbox">
+                        <input id="checkboxPen" type="checkbox" name="checkboxGifts" class="checkbox__input">
+                        <label for="checkboxPen" class="checkbox__label"> <span>branded pen or pencil </span></label>
+                    </div>
+                </div>
+                <button type="submit" class="form__button">Submit</button>
+        </div>
+        </form>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
