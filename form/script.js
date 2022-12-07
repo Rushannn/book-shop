@@ -59,10 +59,13 @@ for (let index = 0; index < inputItems.length; index++) {
 }
 
 function checkInput() {
+    let html = '<span style="color:red;">The field is invalid</span>';
     if (!this.checkValidity()) {
         this.classList.add('_error');
+        this.parentNode.classList.add('_error-item');
     } else {
         this.classList.remove('_error');
+        this.parentNode.classList.remove('_error-item');
     }
     checkValidation();
 };
