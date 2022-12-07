@@ -4,7 +4,6 @@ const dragAndDrop = () => {
 
     const dragStart = function () {
         currentBook = this;
-
     };
 
     let currentBook;
